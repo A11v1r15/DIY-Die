@@ -1,0 +1,8 @@
+{
+	"ingredient": "minecraft:bone_block",
+	"result": {
+		"count": 1,
+		"id": "diy-die:d6"
+	},
+	"type": "minecraft:stonecutting"
+}

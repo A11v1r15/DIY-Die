@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.a11v1r15.diydie.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

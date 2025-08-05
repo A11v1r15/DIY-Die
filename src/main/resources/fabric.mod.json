@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "diy-die",
+	"version": "${version}",
+	"name": "DIY-Die",
+	"description": "Adds dice to Minecraft",
+	"authors": [
+		"A11v1r15"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/diy-die",
+		"sources": "https://github.com/A11v1r15/DIY-Die",
+		"issues": "https://github.com/A11v1r15/DIY-Die/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/diy-die/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.a11v1r15.diydie.DIYDie"
+		],
+		"client": [
+			"net.a11v1r15.diydie.DIYDieClient"
+		],
+		"fabric-datagen": [
+			"net.a11v1r15.diydie.DIYDieDataGenerator"
+		]
+	},
+	"mixins": [
+		"diy-die.mixins.json",
+		{
+			"config": "diy-die.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

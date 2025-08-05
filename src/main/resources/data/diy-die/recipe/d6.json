@@ -1,0 +1,16 @@
+{
+  "category": "redstone",
+  "key": {
+    "#": "minecraft:bone_block"
+  },
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 7,
+    "id": "diy-die:d6"
+  },
+  "type": "minecraft:crafting_shaped"
+}
