@@ -12,7 +12,7 @@ import net.minecraft.registry.RegistryKeys;
 import java.util.function.Function;
 
 public class DIYDieUtil {
-	static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
+	public static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
 		RegistryKey<Block> blockKey = keyOfBlock(name);
 		Block block = blockFactory.apply(settings.registryKey(blockKey));
 

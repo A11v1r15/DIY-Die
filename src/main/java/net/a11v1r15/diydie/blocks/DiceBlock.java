@@ -2,8 +2,10 @@ package net.a11v1r15.diydie.blocks;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.math.BlockPos;
@@ -47,5 +49,13 @@ public class DiceBlock extends FacingBlock {
 
 	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
 		builder.add(new Property[]{FACING});
+	}
+
+	public static AbstractBlock.Settings defaultSettings() {
+		return AbstractBlock.Settings.create()
+				.nonOpaque()
+				.breakInstantly()
+				.pistonBehavior(PistonBehavior.DESTROY)
+				.sounds(BlockSoundGroup.BONE);
 	}
 }

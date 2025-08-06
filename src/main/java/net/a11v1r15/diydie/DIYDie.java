@@ -1,5 +1,6 @@
 package net.a11v1r15.diydie;
 
+import net.a11v1r15.diydie.blocks.DIYDieBlocks;
 import net.a11v1r15.diydie.blocks.DiceBlock;
 import net.fabricmc.api.ModInitializer;
 
@@ -29,48 +30,23 @@ public class DIYDie implements ModInitializer {
 	public static final String MOD_ID = "diy-die";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static final Block D6 = DIYDieUtil.register(
-			"d6",
-			DiceBlock::new,
-			AbstractBlock.Settings.create()
-					.nonOpaque()
-					.breakInstantly()
-					.pistonBehavior(PistonBehavior.DESTROY)
-					.sounds(BlockSoundGroup.BONE),
-			true
-	);
-
 	public static final RegistryKey<ItemGroup> DIY_DIE = RegistryKey.of(Registries.ITEM_GROUP.getKey(), id("item_group"));
 	public static final ItemGroup DIY_DIE_ITEM_GROUP = FabricItemGroup.builder()
-			.icon(() -> new ItemStack(D6))
+			.icon(() -> new ItemStack(DIYDieBlocks.D6))
 			.displayName(Text.translatable("diy-die.diy-die"))
 			.build();
 
 
 	@Override
 	public void onInitialize() {
-		DispenserBlock.registerBehavior(D6, new BlockPlacementDispenserBehavior() {
-			protected ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
-				this.setSuccess(false);
-				Item item = stack.getItem();
-				if (item instanceof BlockItem) {
-					Direction direction = pointer.state().get(DispenserBlock.FACING);
-					BlockPos blockPos = pointer.pos().offset(direction);
-					Direction direction2 = Direction.UP;
-					try {
-						this.setSuccess(((BlockItem)item).place(new AutomaticItemPlacementContext(pointer.world(), blockPos, direction, stack, direction2)).isAccepted());
-					} catch (Exception exception) {
-						LOGGER.error("Error trying to place die at {}", blockPos, exception);
-					}
-				}
-				return stack;
-			};
-		});
+		DIYDieBlocks.onInitialize();
 
 		Registry.register(Registries.ITEM_GROUP, DIY_DIE, DIY_DIE_ITEM_GROUP);
 		ItemGroupEvents.modifyEntriesEvent(DIY_DIE).register(itemGroup -> {
-			itemGroup.add(D6);
+			itemGroup.add(DIYDieBlocks.D6);
+			itemGroup.add(DIYDieBlocks.FATAL_D6);
 		});
+
 		Random random = new Random();
 		int x = random.nextInt(20) + 1;
 		LOGGER.info(switch (x){

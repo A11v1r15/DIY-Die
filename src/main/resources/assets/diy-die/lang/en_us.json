@@ -1,5 +1,7 @@
 {
   "block.diy-die.d6": "D6",
   "item.diy-die.d6": "D6",
+  "block.diy-die.fatal_d6": "Fatal D6",
+  "item.diy-die.fatal_d6": "Fatal D6",
   "diy-die.diy-die": "DIY Die"
 }

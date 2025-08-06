@@ -1,0 +1,12 @@
+{
+	"category": "redstone",
+	"ingredients": [
+		"diy-die:d6",
+		"minecraft:wither_skeleton_skull"
+	],
+	"result": {
+		"count": 1,
+		"id": "diy-die:fatal_d6"
+	},
+	"type": "minecraft:crafting_shapeless"
+}
