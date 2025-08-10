@@ -1,0 +1,21 @@
+{
+  "values": [
+    "diy-die:d6",
+    "diy-die:white_d6",
+    "diy-die:light_gray_d6",
+    "diy-die:gray_d6",
+    "diy-die:black_d6",
+    "diy-die:brown_d6",
+    "diy-die:red_d6",
+    "diy-die:orange_d6",
+    "diy-die:yellow_d6",
+    "diy-die:lime_d6",
+    "diy-die:green_d6",
+    "diy-die:cyan_d6",
+    "diy-die:light_blue_d6",
+    "diy-die:blue_d6",
+    "diy-die:purple_d6",
+    "diy-die:magenta_d6",
+    "diy-die:pink_d6"
+  ]
+}

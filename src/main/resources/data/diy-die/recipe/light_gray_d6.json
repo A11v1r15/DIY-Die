@@ -1,0 +1,12 @@
+{
+	"category": "redstone",
+	"ingredients": [
+		"#diy-die:simple_dice",
+		"minecraft:light_gray_dye"
+	],
+	"result": {
+		"count": 1,
+		"id": "diy-die:light_gray_d6"
+	},
+	"type": "minecraft:crafting_shapeless"
+}

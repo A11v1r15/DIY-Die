@@ -1,0 +1,12 @@
+{
+	"category": "redstone",
+	"ingredients": [
+		"#diy-die:simple_dice",
+		"minecraft:lime_dye"
+	],
+	"result": {
+		"count": 1,
+		"id": "diy-die:lime_d6"
+	},
+	"type": "minecraft:crafting_shapeless"
+}

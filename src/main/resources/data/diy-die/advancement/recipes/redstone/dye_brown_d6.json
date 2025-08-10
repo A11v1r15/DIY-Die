@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"has_needed_dye": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:brown_dye"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		},
+		"has_the_recipe": {
+			"conditions": {
+				"recipe": "diy-die:brown_d6"
+			},
+			"trigger": "minecraft:recipe_unlocked"
+		}
+	},
+	"parent": "minecraft:recipes/root",
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_needed_dye"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"diy-die:brown_d6"
+		]
+	}
+}

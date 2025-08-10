@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "has_bone_block": {
+    "has_wither_skeleton_skull": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bone_block"
+      "has_wither_skeleton_skull"
     ]
   ],
   "rewards": {

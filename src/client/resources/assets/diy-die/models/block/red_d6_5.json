@@ -1,0 +1,8 @@
+{
+	"parent": "diy-die:block/d6_5",
+	"textures": {
+		"base": "diy-die:block/red_d6",
+		"overlay": "diy-die:block/d6_white_dots",
+		"particle": "diy-die:block/red_d6"
+	}
+}

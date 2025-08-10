@@ -1,0 +1,38 @@
+{
+	"parent": "minecraft:block/block",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"base": "diy-die:block/d6",
+		"overlay": "diy-die:block/d6_black_dots",
+		"particle": "diy-die:block/d6"
+	},
+	"elements": [
+		{
+			"from": [4, 4, 4],
+			"to": [12, 12, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 4], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [0, 4, 4, 8], "rotation": 180, "texture": "#base"},
+				"south": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#base"},
+				"west": {"uv": [4, 4, 8, 8], "rotation": 180, "texture": "#base"},
+				"up": {"uv": [12, 0, 8, 4], "texture": "#base"},
+				"down": {"uv": [4, 12, 0, 8], "texture": "#base"}
+			}
+		},
+		{
+			"from": [4, 4, 4],
+			"to": [12, 12, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 4], "rotation": 180, "texture": "#overlay"},
+				"east": {"uv": [0, 4, 4, 8], "rotation": 180, "texture": "#overlay"},
+				"south": {"uv": [0, 0, 4, 4], "rotation": 180, "texture": "#overlay"},
+				"west": {"uv": [4, 4, 8, 8], "rotation": 180, "texture": "#overlay"},
+				"up": {"uv": [12, 0, 8, 4], "texture": "#overlay"},
+				"down": {"uv": [4, 12, 0, 8], "texture": "#overlay"}
+			}
+		}
+	]
+}

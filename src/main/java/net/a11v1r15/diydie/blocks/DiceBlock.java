@@ -7,6 +7,7 @@ import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Property;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -19,9 +20,12 @@ public class DiceBlock extends FacingBlock {
 	public static final MapCodec<DiceBlock> CODEC = createCodec(DiceBlock::new);
 	private static final VoxelShape SHAPE = Block.createCubeShape(8.0F);
 	public MapCodec<DiceBlock> getCodec() {	return CODEC; }
+	public static final IntProperty ROTATION = IntProperty.of("rotation", 0, 3);
 
 	public BlockState getPlacementState(ItemPlacementContext ctx) {
-		return this.getDefaultState().with(FACING, Direction.random(ctx.getWorld().random));
+		return this.getDefaultState()
+				.with(FACING, Direction.random(ctx.getWorld().random))
+				.with(ROTATION, ctx.getWorld().random.nextInt(4));
 	}
 
 	protected boolean hasComparatorOutput(BlockState state) {
@@ -49,6 +53,7 @@ public class DiceBlock extends FacingBlock {
 
 	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
 		builder.add(new Property[]{FACING});
+		builder.add(new Property[]{ROTATION});
 	}
 
 	public static AbstractBlock.Settings defaultSettings() {
