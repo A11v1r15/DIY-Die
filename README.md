@@ -6,7 +6,8 @@ That's it, I added dice in Minecraft. You can place it and it'll have a random s
 ## How do I Do It Myself a Die?
 Simple, since the first dice were made using bones, that's the material of choice here too!<br>
 You'll need to put Bone Blocks in the crafting grid as the 6 dots of the dice plus the single dot from the opposite side to be able to craft lucky number 7 dice. Or you can just put the Bone Block in the Stone Cutter to get snake eye die from one block.<br>
-The Fatal Die is a shapeless recipe from a D6 and a Wither Skeleton Skull, the Nihilo one uses End Stone instead.
+The Copper Die is a shapeless recipe from a Die and a Copper Ingot, you can guess how to get all the following variations of it.<br>
+The Fatal Die is a shapeless recipe from a Die and a Wither Skeleton Skull, the Nihilo one uses End Stone instead.
 <details>
 <summary>D6 Recipe Shape</summary>
     "# #"<br>

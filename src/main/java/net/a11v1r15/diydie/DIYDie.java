@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.DispenserBlock;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -36,6 +37,7 @@ public class DIYDie implements ModInitializer {
 			itemGroup.add(DIYDieBlocks.D6);
 			itemGroup.add(DIYDieBlocks.WHITE_D6);
 			itemGroup.add(DIYDieBlocks.LIGHT_GRAY_D6);
+			itemGroup.add(DIYDieBlocks.GRAY_D6);
 			itemGroup.add(DIYDieBlocks.BLACK_D6);
 			itemGroup.add(DIYDieBlocks.BROWN_D6);
 			itemGroup.add(DIYDieBlocks.RED_D6);
@@ -49,9 +51,19 @@ public class DIYDie implements ModInitializer {
 			itemGroup.add(DIYDieBlocks.PURPLE_D6);
 			itemGroup.add(DIYDieBlocks.MAGENTA_D6);
 			itemGroup.add(DIYDieBlocks.PINK_D6);
+			itemGroup.add(DIYDieBlocks.COPPER_D6);
+			itemGroup.add(DIYDieBlocks.EXPOSED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.WEATHERED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.OXIDIZED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.WAXED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.WAXED_EXPOSED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.WAXED_WEATHERED_COPPER_D6);
+			itemGroup.add(DIYDieBlocks.WAXED_OXIDIZED_COPPER_D6);
 			itemGroup.add(DIYDieBlocks.FATAL_D6);
 			itemGroup.add(DIYDieBlocks.NIHILO_D6);
 		});
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE)
+				.register((itemGroup) -> itemGroup.add(DIYDieBlocks.D6));
 
 		Random random = new Random();
 		int x = random.nextInt(6) + 1;

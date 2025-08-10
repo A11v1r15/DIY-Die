@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class FatalDiceBlock extends DiceBlock {
-	public FatalDiceBlock(Settings settings, RegistryKey<DamageType> damageType) {
+	public FatalDiceBlock(RegistryKey<DamageType> damageType, Settings settings) {
 		super(settings);
 		this.damageType = damageType;
 	}

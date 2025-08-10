@@ -1,0 +1,12 @@
+{
+	"category": "redstone",
+	"ingredients": [
+		"#diy-die:simple_dice",
+		"minecraft:copper_ingot"
+	],
+	"result": {
+		"count": 1,
+		"id": "diy-die:copper_d6"
+	},
+	"type": "minecraft:crafting_shapeless"
+}

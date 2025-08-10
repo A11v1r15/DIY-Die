@@ -1,0 +1,12 @@
+{
+	"category": "redstone",
+	"ingredients": [
+		"diy-die:weathered_copper_d6",
+		"minecraft:honeycomb"
+	],
+	"result": {
+		"count": 1,
+		"id": "diy-die:waxed_weathered_copper_d6"
+	},
+	"type": "minecraft:crafting_shapeless"
+}

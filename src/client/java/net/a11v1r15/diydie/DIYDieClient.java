@@ -4,9 +4,6 @@ import net.a11v1r15.diydie.blocks.DIYDieBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.BlockRenderLayer;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.entity.EndGatewayBlockEntityRenderer;
-import net.minecraft.client.render.block.entity.EndPortalBlockEntityRenderer;
 
 public class DIYDieClient implements ClientModInitializer {
 	@Override
@@ -16,6 +13,7 @@ public class DIYDieClient implements ClientModInitializer {
 				DIYDieBlocks.D6,
 				DIYDieBlocks.WHITE_D6,
 				DIYDieBlocks.LIGHT_GRAY_D6,
+				DIYDieBlocks.GRAY_D6,
 				DIYDieBlocks.BLACK_D6,
 				DIYDieBlocks.BROWN_D6,
 				DIYDieBlocks.RED_D6,
@@ -29,6 +27,14 @@ public class DIYDieClient implements ClientModInitializer {
 				DIYDieBlocks.PURPLE_D6,
 				DIYDieBlocks.MAGENTA_D6,
 				DIYDieBlocks.PINK_D6,
+				DIYDieBlocks.COPPER_D6,
+				DIYDieBlocks.EXPOSED_COPPER_D6,
+				DIYDieBlocks.WEATHERED_COPPER_D6,
+				DIYDieBlocks.OXIDIZED_COPPER_D6,
+				DIYDieBlocks.WAXED_COPPER_D6,
+				DIYDieBlocks.WAXED_EXPOSED_COPPER_D6,
+				DIYDieBlocks.WAXED_WEATHERED_COPPER_D6,
+				DIYDieBlocks.WAXED_OXIDIZED_COPPER_D6,
 				DIYDieBlocks.FATAL_D6,
 				DIYDieBlocks.NIHILO_D6
 		);

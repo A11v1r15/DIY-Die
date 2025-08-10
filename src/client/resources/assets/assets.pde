@@ -1,5 +1,5 @@
-String[] colours =  {"white", "light_gray", "gray",  "black", "brown", "red",   "orange", "yellow", "lime",  "green", "cyan",  "light_blue", "blue",  "purple", "magenta", "pink",  "fatal", "nihilo"};
-String[] colours2 = {"black", "black",      "black", "white", "white", "white", "black",  "black",  "black", "white", "black", "black",      "white", "white",  "white",   "black", "white", "white"};
+String[] colours =  {"white", "light_gray", "gray",  "black", "brown", "red",   "orange", "yellow", "lime",  "green", "cyan",  "light_blue", "blue",  "purple", "magenta", "pink",  "copper", "exposed_copper", "weathered_copper", "oxidized_copper", "waxed_copper", "waxed_exposed_copper", "waxed_weathered_copper", "waxed_oxidized_copper", "fatal", "nihilo"};
+String[] colours2 = {"black", "black",      "black", "white", "white", "white", "black",  "black",  "black", "white", "black", "black",      "white", "white",  "white",   "black", "black",  "black",          "black",            "black",           "black",        "black",                "black",                  "black",                 "red",   "red"};
 
 void start() {
   String[] blockstates = loadStrings("../diy-die/blockstates/d6.json");
@@ -22,7 +22,7 @@ void start() {
     for (int c = 0; c < colours.length; c++) {
       String[] mCopy = new String[models.length];
       for (int i = 0; i < models.length; i++) {
-        mCopy[i] = models[i].replace("fatal_d6", colours[c] + "_d6").replace("white_dots", colours2[c] + "_dots");
+        mCopy[i] = models[i].replace("fatal_d6", colours[c].replace("waxed_", "") + "_d6").replace("red_dots", colours2[c] + "_dots");
       }
       saveStrings("diy-die/models/block/" + colours[c] + "_d6_" + j + ".json", mCopy);
     }

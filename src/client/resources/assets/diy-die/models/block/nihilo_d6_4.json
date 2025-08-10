@@ -2,7 +2,7 @@
 	"parent": "diy-die:block/d6_4",
 	"textures": {
 		"base": "diy-die:block/nihilo_d6",
-		"overlay": "diy-die:block/d6_white_dots",
+		"overlay": "diy-die:block/d6_red_dots",
 		"particle": "diy-die:block/nihilo_d6"
 	}
 }
