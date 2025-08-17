@@ -1,42 +1,38 @@
 {
 	"schemaVersion": 1,
-	"id": "diy-die",
+	"id": "${modId}",
 	"version": "${version}",
-	"name": "DIY-Die",
-	"description": "Adds dice to Minecraft",
+	"name": "${modName}",
+	"description": "${modDescription}",
 	"authors": [
-		"A11v1r15"
+		"${authors}"
+	],
+	"contributors": [
+		"${contributors}"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/diy-die",
-		"sources": "https://github.com/A11v1r15/DIY-Die",
-		"issues": "https://github.com/A11v1r15/DIY-Die/issues"
+		"homepage": "${homepage}",
+		"issues": "${issues}",
+		"sources": "${sources}"
 	},
-	"license": "MIT",
-	"icon": "assets/diy-die/icon.png",
-	"environment": "*",
+	"license": "${license}",
+	"icon": "assets/${modId}/icon.png",
+	"mixins": [
+		"${modId}.mixins.json"
+	],
+	"depends": {
+		"minecraft": ">=${mc}",
+		"fabricloader": ">=${fl}",
+		"fabric-api": ">=${fapi}"
+	},
+	"suggests": {
+	},
 	"entrypoints": {
 		"main": [
 			"net.a11v1r15.diydie.DIYDie"
 		],
 		"client": [
 			"net.a11v1r15.diydie.DIYDieClient"
-		],
-		"fabric-datagen": [
-			"net.a11v1r15.diydie.DIYDieDataGenerator"
 		]
-	},
-	"mixins": [
-		"diy-die.mixins.json",
-		{
-			"config": "diy-die.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.8",
-		"java": ">=21",
-		"fabric-api": "*"
 	}
 }

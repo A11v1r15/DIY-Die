@@ -47,7 +47,6 @@ public class DiceBlock extends FacingBlock implements Waterloggable {
 		if (state.get(WATERLOGGED)) {
 			tickView.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
 		}
-
 		return super.getStateForNeighborUpdate(state, world, tickView, pos, direction, neighborPos, neighborState, random);
 	}
 

@@ -13,6 +13,7 @@ import net.minecraft.item.AutomaticItemPlacementContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPointer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -124,49 +125,49 @@ public class DIYDieBlocks {
 	public static final Block COPPER_D6 = DIYDieUtil.register(
 			"copper_d6",
 			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.UNAFFECTED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE),
+			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block EXPOSED_COPPER_D6 = DIYDieUtil.register(
 			"exposed_copper_d6",
 			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.EXPOSED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY),
+			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block WEATHERED_COPPER_D6 = DIYDieUtil.register(
 			"weathered_copper_d6",
 			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.WEATHERED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA),
+			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block OXIDIZED_COPPER_D6 = DIYDieUtil.register(
 			"oxidized_copper_d6",
 			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.OXIDIZED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.TEAL),
+			DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block WAXED_COPPER_D6 = DIYDieUtil.register(
 			"waxed_copper_d6",
 			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE),
+			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block WAXED_EXPOSED_COPPER_D6 = DIYDieUtil.register(
 			"waxed_exposed_copper_d6",
 			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY),
+			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block WAXED_WEATHERED_COPPER_D6 = DIYDieUtil.register(
 			"waxed_weathered_copper_d6",
 			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA),
+			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 	public static final Block WAXED_OXIDIZED_COPPER_D6 = DIYDieUtil.register(
 			"waxed_oxidized_copper_d6",
 			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.TEAL),
+			DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
 			true
 	);
 
@@ -179,7 +180,7 @@ public class DIYDieBlocks {
 	public static final Block NIHILO_D6 = DIYDieUtil.register(
 			"nihilo_d6",
 			settings -> new FatalDiceBlock(DamageTypes.OUT_OF_WORLD, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.BLACK),
+			DiceBlock.defaultSettings().mapColor(MapColor.CLEAR).sounds(BlockSoundGroup.INTENTIONALLY_EMPTY),
 			true
 	);
 
@@ -206,6 +207,7 @@ public class DIYDieBlocks {
 		DispenserBlock.registerBehavior(DIYDieBlocks.D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.WHITE_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.LIGHT_GRAY_D6, diceBlockPlacementDispenserBehavior);
+		DispenserBlock.registerBehavior(DIYDieBlocks.GRAY_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.BLACK_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.BROWN_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.RED_D6, diceBlockPlacementDispenserBehavior);
