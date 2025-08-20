@@ -1,0 +1,12 @@
+{
+  "values": [
+    "diy-die:copper_d6",
+    "diy-die:exposed_copper_d6",
+    "diy-die:weathered_copper_d6",
+    "diy-die:oxidized_copper_d6",
+    "diy-die:waxed_copper_d6",
+    "diy-die:waxed_exposed_copper_d6",
+    "diy-die:waxed_weathered_copper_d6",
+    "diy-die:waxed_oxidized_copper_d6"
+  ]
+}

@@ -2,7 +2,7 @@ String[] colours =  {"white", "light_gray", "gray", "black", "brown", "red", "or
 String[] specials = {"copper", "exposed_copper", "weathered_copper", "oxidized_copper", "waxed_copper", "waxed_exposed_copper", "waxed_weathered_copper", "waxed_oxidized_copper", "fatal", "nihilo"};
 String[] igredients = {"copper_ingot", "",       "",                 "",                "honeycomb",    "honeycomb",            "honeycomb",              "honeycomb", "wither_skeleton_skull", "end_stone"};
 
-void start() {
+void start() {/*
   String[] lootTable = loadStrings("../diy-die/loot_table/blocks/d6.json");
   String[] recipe = loadStrings("../diy-die/recipe/fatal_d6.json");
   String[] advancement = loadStrings("../diy-die/advancement/recipes/redstone/dye_red_d6.json");
@@ -45,6 +45,15 @@ void start() {
     saveStrings("diy-die/loot_table/blocks/" + specials[s] + "_d6.json", lCopy);
     if (!igredients[s].equals("")) saveStrings("diy-die/recipe/" + specials[s] + "_d6.json", rCopy);
     if (!igredients[s].equals("")) saveStrings("diy-die/advancement/recipes/redstone/" + specials[s] + "_d6.json", aCopy);
-  }
+  }*/
+	String tag = "{\n" +
+		"\t\"values\": [\n" +
+		"\t\t\"diy-die:all_dice\"\n" +
+		"\t]\n" +
+		"}\n";
+	for (String colour : colours) {
+    saveStrings("./c/tags/item/dyed/"+colour, tag.replace("all_dice", colour+"_d6").split("\n"));
+    saveStrings("./c/tags/block/dyed/"+colour, tag.replace("all_dice", colour+"_d6").split("\n"));
+	}
   exit();
 }
