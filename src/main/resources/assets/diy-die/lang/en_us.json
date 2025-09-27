@@ -53,6 +53,8 @@
 	"item.diy-die.fatal_d6": "Fatal Die",
 	"block.diy-die.nihilo_d6": "Nihilo Die Block",
 	"item.diy-die.nihilo_d6": "Nihilo Die",
+	"block.diy-die.secret_d6": "Secret Die Block",
+	"item.diy-die.secret_d6": "Secret Die",
 	"diy-die.diy-die": "DIY Die",
 	"tag.item.diy-die.simple_dice": "Simple Dice",
 	"tag.block.diy-die.simple_dice": "Simple Dice",
@@ -88,5 +90,6 @@
 	"lore.diy-die.waxed_weathered_copper_d6": "A block that shows a random side up when placed and has redstone signal accordingly. But copper coated and weathered, but now wax protected",
 	"lore.diy-die.waxed_oxidized_copper_d6": "A block that shows a random side up when placed and has redstone signal accordingly. But copper coated, oxidized and for some reason, wax protected",
 	"lore.diy-die.fatal_d6": "A block that shows a random side up when placed and has redstone signal accordingly. But getting a 1 can prove to be fatal to it's caster",
-	"lore.diy-die.nihilo_d6": "A §kblock§r that shows a random side up when placed and has redstone signal accordingly. It is null, empty, void, nothing, and so may be who dares to cast them"
+	"lore.diy-die.nihilo_d6": "A §kblock§r that shows a random side up when placed and has redstone signal accordingly. It is null, empty, void, nothing, and so may be who dares to cast them",
+	"lore.diy-die.secret_d6": "A block that shows a random side up when placed and has redstone signal accordingly. Shout out the war cry of Victory!"
 }

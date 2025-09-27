@@ -20,168 +20,174 @@ import net.minecraft.util.math.Direction;
 
 public class DIYDieBlocks {
 	public static final Block D6 = DIYDieUtil.register(
-			"d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.PALE_YELLOW),
-			true
+		"d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.PALE_YELLOW),
+		true
 	);
 	public static final Block WHITE_D6 = DIYDieUtil.register(
-			"white_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.WHITE),
-			true
+		"white_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.WHITE),
+		true
 	);
 	public static final Block LIGHT_GRAY_D6 = DIYDieUtil.register(
-			"light_gray_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.LIGHT_GRAY),
-			true
+		"light_gray_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.LIGHT_GRAY),
+		true
 	);
 	public static final Block GRAY_D6 = DIYDieUtil.register(
-			"gray_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.GRAY),
-			true
+		"gray_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.GRAY),
+		true
 	);
 	public static final Block BLACK_D6 = DIYDieUtil.register(
-			"black_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.BLACK),
-			true
+		"black_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.BLACK),
+		true
 	);
 	public static final Block BROWN_D6 = DIYDieUtil.register(
-			"brown_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.BROWN),
-			true
+		"brown_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.BROWN),
+		true
 	);
 	public static final Block RED_D6 = DIYDieUtil.register(
-			"red_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.RED),
-			true
+		"red_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.RED),
+		true
 	);
 	public static final Block ORANGE_D6 = DIYDieUtil.register(
-			"orange_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE),
-			true
+		"orange_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.ORANGE),
+		true
 	);
 	public static final Block YELLOW_D6 = DIYDieUtil.register(
-			"yellow_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.YELLOW),
-			true
+		"yellow_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.YELLOW),
+		true
 	);
 	public static final Block LIME_D6 = DIYDieUtil.register(
-			"lime_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.LIME),
-			true
+		"lime_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.LIME),
+		true
 	);
 	public static final Block GREEN_D6 = DIYDieUtil.register(
-			"green_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.GREEN),
-			true
+		"green_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.GREEN),
+		true
 	);
 	public static final Block CYAN_D6 = DIYDieUtil.register(
-			"cyan_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.CYAN),
-			true
+		"cyan_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.CYAN),
+		true
 	);
 	public static final Block LIGHT_BLUE_D6 = DIYDieUtil.register(
-			"light_blue_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.LIGHT_BLUE),
-			true
+		"light_blue_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.LIGHT_BLUE),
+		true
 	);
 	public static final Block BLUE_D6 = DIYDieUtil.register(
-			"blue_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.BLUE),
-			true
+		"blue_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.BLUE),
+		true
 	);
 	public static final Block PURPLE_D6 = DIYDieUtil.register(
-			"purple_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.PURPLE),
-			true
+		"purple_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.PURPLE),
+		true
 	);
 	public static final Block MAGENTA_D6 = DIYDieUtil.register(
-			"magenta_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.MAGENTA),
-			true
+		"magenta_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.MAGENTA),
+		true
 	);
 	public static final Block PINK_D6 = DIYDieUtil.register(
-			"pink_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.PINK),
-			true
+		"pink_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.PINK),
+		true
 	);
 
 	public static final Block COPPER_D6 = DIYDieUtil.register(
-			"copper_d6",
-			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.UNAFFECTED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
-			true
+		"copper_d6",
+		settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.UNAFFECTED, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block EXPOSED_COPPER_D6 = DIYDieUtil.register(
-			"exposed_copper_d6",
-			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.EXPOSED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
-			true
+		"exposed_copper_d6",
+		settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.EXPOSED, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block WEATHERED_COPPER_D6 = DIYDieUtil.register(
-			"weathered_copper_d6",
-			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.WEATHERED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
-			true
+		"weathered_copper_d6",
+		settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.WEATHERED, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block OXIDIZED_COPPER_D6 = DIYDieUtil.register(
-			"oxidized_copper_d6",
-			settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.OXIDIZED, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
-			true
+		"oxidized_copper_d6",
+		settings -> new OxidizableDiceBlock(Oxidizable.OxidationLevel.OXIDIZED, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block WAXED_COPPER_D6 = DIYDieUtil.register(
-			"waxed_copper_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
-			true
+		"waxed_copper_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block WAXED_EXPOSED_COPPER_D6 = DIYDieUtil.register(
-			"waxed_exposed_copper_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
-			true
+		"waxed_exposed_copper_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block WAXED_WEATHERED_COPPER_D6 = DIYDieUtil.register(
-			"waxed_weathered_copper_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
-			true
+		"waxed_weathered_copper_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 	public static final Block WAXED_OXIDIZED_COPPER_D6 = DIYDieUtil.register(
-			"waxed_oxidized_copper_d6",
-			DiceBlock::new,
-			DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
-			true
+		"waxed_oxidized_copper_d6",
+		DiceBlock::new,
+		DiceBlock.defaultSettings().mapColor(MapColor.TEAL).sounds(BlockSoundGroup.COPPER),
+		true
 	);
 
 	public static final Block FATAL_D6 = DIYDieUtil.register(
-			"fatal_d6",
-			settings -> new FatalDiceBlock(DamageTypes.WITHER, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.BLACK),
-			true
+		"fatal_d6",
+		settings -> new FatalDiceBlock(DamageTypes.WITHER, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.BLACK),
+		true
 	);
 	public static final Block NIHILO_D6 = DIYDieUtil.register(
-			"nihilo_d6",
-			settings -> new FatalDiceBlock(DamageTypes.OUT_OF_WORLD, settings),
-			DiceBlock.defaultSettings().mapColor(MapColor.CLEAR).sounds(BlockSoundGroup.INTENTIONALLY_EMPTY),
-			true
+		"nihilo_d6",
+		settings -> new FatalDiceBlock(DamageTypes.OUT_OF_WORLD, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.CLEAR).sounds(BlockSoundGroup.INTENTIONALLY_EMPTY),
+		true
+	);
+	public static final Block SECRET_D6 = DIYDieUtil.register(
+		"secret_d6",
+		settings -> new FatalDiceBlock(DamageTypes.SONIC_BOOM, settings),
+		DiceBlock.defaultSettings().mapColor(MapColor.WHITE).sounds(BlockSoundGroup.AMETHYST_BLOCK),
+		true
 	);
 
 	public static void onInitialize() {
@@ -231,6 +237,7 @@ public class DIYDieBlocks {
 		DispenserBlock.registerBehavior(DIYDieBlocks.WAXED_OXIDIZED_COPPER_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.FATAL_D6, diceBlockPlacementDispenserBehavior);
 		DispenserBlock.registerBehavior(DIYDieBlocks.NIHILO_D6, diceBlockPlacementDispenserBehavior);
+		DispenserBlock.registerBehavior(DIYDieBlocks.SECRET_D6, diceBlockPlacementDispenserBehavior);
 
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(COPPER_D6, EXPOSED_COPPER_D6);
 		OxidizableBlocksRegistry.registerOxidizableBlockPair(EXPOSED_COPPER_D6, WEATHERED_COPPER_D6);

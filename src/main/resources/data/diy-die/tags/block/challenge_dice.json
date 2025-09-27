@@ -1,6 +1,7 @@
 {
   "values": [
 	  "diy-die:fatal_d6",
-	  "diy-die:nihilo_d6"
+	  "diy-die:nihilo_d6",
+	  "diy-die:secret_d6"
   ]
 }

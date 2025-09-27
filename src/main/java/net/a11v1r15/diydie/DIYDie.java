@@ -62,7 +62,9 @@ public class DIYDie implements ModInitializer {
 			itemGroup.add(DIYDieBlocks.NIHILO_D6);
 		});
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE)
-				.register((itemGroup) -> itemGroup.add(DIYDieBlocks.D6));
+			.register((itemGroup) -> itemGroup.add(DIYDieBlocks.D6));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR)
+			.register((itemGroup) -> itemGroup.add(DIYDieBlocks.SECRET_D6));
 
 		Random random = new Random();
 		int x = random.nextInt(6) + 1;
